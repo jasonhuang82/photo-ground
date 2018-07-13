@@ -17,18 +17,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <ol>
-            <li>Turn this app into one which does NOT use local state (in components) but instead uses Redux</li>
-          </ol>
-          <ul>
-            <li>
-              <Link to="/photo-list">photo-list</Link>
-            </li>
-          </ul>
-          <Switch>
-            <Route path="/" render={(props) => <Persons {...props}/>} />
-            <Route path="/photo-list" render={(props) => <PhotoList {...props} />} />
-          </Switch>
+
+          
         </div>
       </Router>
     );
@@ -36,3 +26,19 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+
+<ul>
+  <li>
+    <Link to="/">HOME</Link>
+  </li>
+  <li>
+    <Link to="/photo-list">photo-list</Link>
+  </li>
+</ul>
+<Switch>
+  <Route path="/" render={(props) => <Persons {...props}/>} />
+  <Route path="/photo-list" render={(props) => <PhotoList {...props} />} />
+</Switch>
+*/
